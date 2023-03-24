@@ -31,7 +31,7 @@ You can find ChatGPT here: <https://chat.openai.com/chat>
 ### Your Prompt
 Provide below the first description you gave ChatGPT:
 
-YOUR ANSWER HERE
+Can you write me a graphics engine in java? It needs to be able to make lines, circles, bezier curves, hermite curves. It should maintain a 4xn array of points with each pair representing a edge. It should also be able to do rotations, translations, and dilations. Lastly, it should be able to save images as a ppm.
 
 ### The Code
 Crate a folder in this repository called __0-program__ containing all the relevant code initially created by ChatGPT.
