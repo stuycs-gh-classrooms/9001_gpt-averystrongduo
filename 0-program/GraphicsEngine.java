@@ -191,26 +191,26 @@ public class GraphicsEngine {
         GraphicsEngine engine = new GraphicsEngine(500, 500);
     
         // Draw a red line from (100, 100) to (400, 400)
-        engine.setColor(255, 0, 0);
+        engine.setColor(Color.RED);
         engine.drawLine(100, 100, 400, 400);
     
         // Draw a green circle with radius 50 centered at (250, 250)
-        engine.setColor(0, 255, 0);
+        engine.setColor(Color.GREEN);
         engine.drawCircle(250, 250, 50);
     
         // Draw a blue Bezier curve with control points at (100, 400), (200, 100), (300, 400), (400, 100)
-        engine.setColor(0, 0, 255);
+        engine.setColor(Color.BLUE);
         engine.drawBezierCurve(100, 400, 200, 100, 300, 400, 400, 100);
     
         // Draw a yellow Hermite curve with start point (50, 50), end point (450, 450), tangent vectors (1, 0) and (0, 1)
-        engine.setColor(255, 255, 0);
+        engine.setColor(Color.YELLOW);
         engine.drawHermiteCurve(50, 50, 1, 0, 450, 450, 0, 1);
     
         // Rotate the canvas 45 degrees around the center point (250, 250)
-        engine.rotate(45, 250, 250);
+        engine.rotate(Math.toRadians(45));
     
-        // Dilate the canvas by a factor of 2 around the center point (250, 250)
-        engine.dilate(2, 250, 250);
+        // Dilate the canvas by a factor of 2
+        engine.dilate(2);
     
         // Translate the canvas by (50, 50)
         engine.translate(50, 50);
@@ -218,5 +218,9 @@ public class GraphicsEngine {
         // Save the image as a PPM file called "test.ppm"
         engine.saveAsPPM("test.ppm");
     }
+    
+    
+    
+    
     
 }    
